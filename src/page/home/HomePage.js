@@ -155,7 +155,7 @@ function HomePage() {
   const { register, trigger, handleSubmit } = useForm();
   const navigate = useNavigate();
   const onSubmitHandler = (value) => {
-    if(value.username === "patedethuong" && value.password === "14102022" ){
+    if(value.username === "jecytran" && value.password === "14102022" ){
         localStorage.setItem('PATESMUSIC','pate')
         navigate('/web_music/playing');
     }else{

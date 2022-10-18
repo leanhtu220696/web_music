@@ -32,8 +32,6 @@ export const listDataMusic = [
     },
 ];
 
-
-
 const StyleBackground = styled.div`
     position: absolute;
     width: 15%;
@@ -81,6 +79,7 @@ const StyleItems = styled.a`
         margin-right: 20px;
     }
 `;
+
 function ListMusic(){
     const[nowPlaying, setNowPlaying] = useGlobalState('nowPlaying');
     return (
