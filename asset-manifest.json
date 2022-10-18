@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/web_music/static/css/main.831ff3ce.css",
-    "main.js": "/web_music/static/js/main.a8b04d85.js",
+    "main.js": "/web_music/static/js/main.951cdb39.js",
     "static/js/787.97add015.chunk.js": "/web_music/static/js/787.97add015.chunk.js",
     "static/media/luffy.png": "/web_music/static/media/luffy.c86fa946fe14dc83e9ab.png",
     "static/media/imageBackground.jpeg": "/web_music/static/media/imageBackground.a7c3db7b19a4df140bbb.jpeg",
     "index.html": "/web_music/index.html",
     "main.831ff3ce.css.map": "/web_music/static/css/main.831ff3ce.css.map",
-    "main.a8b04d85.js.map": "/web_music/static/js/main.a8b04d85.js.map",
+    "main.951cdb39.js.map": "/web_music/static/js/main.951cdb39.js.map",
     "787.97add015.chunk.js.map": "/web_music/static/js/787.97add015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.831ff3ce.css",
-    "static/js/main.a8b04d85.js"
+    "static/js/main.951cdb39.js"
   ]
 }
