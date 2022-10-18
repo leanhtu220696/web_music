@@ -1,4 +1,4 @@
-import { faPlayCircle, faPauseCircle } from "@fortawesome/free-solid-svg-icons";
+import { faPlayCircle, faPauseCircle, faMusic } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 
@@ -34,16 +34,22 @@ const ViewTitle = styled.div`
 `;
 const ViewNameMusic = styled.div`
     position: absolute;
-    bottom: 25%;
+    bottom: 22%;
     right: 8%;
 `;
 const StyleNameMusic = styled.div`
   {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     align-items: self-start;
     justify-content: center;
+    align-items: center;
+  }
+  & > div {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
   }
   h1 {
       color: #fff;
@@ -52,8 +58,8 @@ const StyleNameMusic = styled.div`
       text-transform: uppercase;
       letter-spacing: 2px;
       font-size: 24px;
-      margin-right: 20px;
       position: relative;
+      margin-bottom: 30px;
   }
   h1::after {
     content: ' ';
@@ -97,6 +103,11 @@ function Controls({setPlaying, playing}){
         <ViewNameMusic>
             <StyleNameMusic>
                 <h1>{nameMusic}</h1>
+                <div>
+                    <FontAwesomeIcon icon={faMusic} size='3x' color='white' style={{ transform: "translateX(-5px)"}} />
+                    <FontAwesomeIcon icon={faMusic} size='3x' color='white' style={{ transform: "translateX(-5px)"}} />
+                    <FontAwesomeIcon icon={faMusic} size='3x' color='white' style={{ transform: "translateX(-5px)"}} />
+                </div>
             </StyleNameMusic>
         </ViewNameMusic>
         <ListMusic/>
