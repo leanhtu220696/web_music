@@ -4,8 +4,6 @@ import { useNavigate } from 'react-router-dom';
 import Controls from '../../component/control';
 import { listDataMusic } from '../../component/listMusic';
 import { useGlobalState } from '../contex/globalState';
-import { StyleModal } from '../home/HomePage';
-import imgLuffy from '../../assets/luffy.png';
 
 function PlayerPage(){
     const [ nowPlaying, setNowPlaying ] = useGlobalState('nowPlaying');
@@ -67,11 +65,6 @@ function PlayerPage(){
                 url={url}
                 style={{padding:'10px 0px', overflow: 'hidden'}}
             />
-            { !playing && <StyleModal>
-                <div style={{ position: 'absolute', top: '30%'}}>
-                    <img src={imgLuffy} style={{width: '100px'}} alt='Image Lufy'/> 
-                </div>    
-            </StyleModal> }
         </div>
     );
 }
